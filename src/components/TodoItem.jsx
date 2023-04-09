@@ -1,8 +1,8 @@
-function TodoItem() {
+function TodoItem({ task }) {
   return(
     <div>
       <input type="checkbox" name="todo-item" id="todo-item" />
-      <span>Tarefa 1</span>
+      <span>{ task }</span>
     </div>
   )
 }
