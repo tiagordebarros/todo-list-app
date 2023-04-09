@@ -1,13 +1,11 @@
 import './App.css';
-import AddTodoButton from './components/AddTodoButton';
-import TodoItem from './components/TodoItem';
+import TodoList from './pages/TodoList';
 
 function App() {
   return (
-    <div>
-      <AddTodoButton />
-      <TodoItem />
-    </div>
+    <>
+    <TodoList />
+    </>
   );
 }
 
