@@ -11,11 +11,17 @@ function TodoList() {
     })
   }
 
+  const finishedTask = (id) => {
+    setTodoList((prevState) => {
+      return prevState.filter((_, index) => index !== id);
+    })
+  }
+
   return(
   <>
   <AddTodoButton taskList={ getTaskList } />
   { todoList && todoList.map((todo, index) => (
-    <TodoItem key={ index } task={ todo } />
+    <TodoItem key={ index } id={ index } task={ todo } complete={ finishedTask } />
   )) }
   </>
   )

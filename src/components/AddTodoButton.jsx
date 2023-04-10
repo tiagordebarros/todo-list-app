@@ -4,13 +4,12 @@ function AddTodoButton({ taskList }) {
   const [task, setTask] = useState("");
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setTask(e.target.value);
   }
 
   const handleClick = () => {
     if (task === "") {
-      return global.alert("Por favor, digite uma tarefa.")
+      return global.alert("Por favor, digite uma tarefa.");
     }
     taskList(task);
     setTask("");
