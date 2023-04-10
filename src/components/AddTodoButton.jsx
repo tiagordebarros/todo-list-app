@@ -5,7 +5,7 @@ function AddTodoButton({ taskList }) {
 
   const handleChange = (e) => {
     setTask(e.target.value);
-  }
+  };
 
   const handleClick = () => {
     if (task === "") {
@@ -13,16 +13,23 @@ function AddTodoButton({ taskList }) {
     }
     taskList(task);
     setTask("");
-  }
+  };
 
-  return(
+  return (
     <form>
-      <input type="text" name="task" id="task" value={ task } placeholder="Nova tarefa" onChange={ handleChange } />
-      <button type="button" onClick={ handleClick }>
+      <input
+        type="text"
+        name="task"
+        id="task"
+        value={task}
+        placeholder="Nova tarefa"
+        onChange={handleChange}
+      />
+      <button type="button" onClick={handleClick}>
         Adicionar
       </button>
     </form>
-  )
+  );
 }
 
 export default AddTodoButton;
