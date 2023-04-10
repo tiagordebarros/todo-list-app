@@ -9,6 +9,9 @@ function AddTodoButton({ taskList }) {
   }
 
   const handleClick = () => {
+    if (task === "") {
+      return global.alert("Por favor, digite uma tarefa.")
+    }
     taskList(task);
     setTask("");
   }
