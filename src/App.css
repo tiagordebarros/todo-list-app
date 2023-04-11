@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+/* Estilos globais */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o botão "Adicionar" */
+form {
+  display: flex;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 70%;
+}
+
+button[type="button"] {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 30%;
+}
+
+button[type="button"]:hover {
+  cursor: pointer;
+  background-color: #2e8b57;
+}
+
+/* Estilos para cada tarefa */
+div {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  /* display: flex; */
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+label {
+  align-items: center;
+  display: flex;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+span {
+  font-size: 16px;
+  margin-left: 10px;
+  text-decoration: none;
+}

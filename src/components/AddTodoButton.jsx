@@ -24,6 +24,7 @@ function AddTodoButton({ taskList }) {
         value={task}
         placeholder="Nova tarefa"
         onChange={handleChange}
+        autoFocus={true}
       />
       <button type="button" onClick={handleClick}>
         Adicionar
